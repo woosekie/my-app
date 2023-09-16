@@ -10,10 +10,9 @@ import {
   FlatList,
   ActivityIndicator,
 } from "react-native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
 // import { useNavigation } from "@react-navigation/native";
 
-export default class App extends Component {
+export default class ListScreen extends Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -68,7 +67,7 @@ export default class App extends Component {
             style={{ margin: 20, flexDirection: "row", alignItems: "center" }}
           >
             <TouchableOpacity
-             onPress={() => this.props.navigation.navigate('./components/Aboutscreen')}
+             onPress={() => this.props.navigation.navigate('Profile')}
             >
               <Image
                 source={require('./profile.jpg')}
